@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: #7fb77e;
+  position: relative;
+  text-align: center;
+}
+
+/* Html elements */
+
+h1 {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 3rem;
+  position: relative;
+  top: 4.4rem;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+/* ids and classes */
+
+.facts {
+  font-family: "Kalam", cursive;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+#box {
+  display: inline-block;
+  position: absolute;
+  left: 25rem;
+  top: 12.5rem;
+  text-align: center;
+  width: 50%;
+  height: fit-content;
+  margin-bottom: 12.5rem;
+  font-family: cursive;
+
+  /* lets try */
+  border-radius: 3.125rem;
+  background: #7fb77e;
+  box-shadow: 20px 20px 60px #6c9c6b, -20px -20px 60px #92d291;
+}
